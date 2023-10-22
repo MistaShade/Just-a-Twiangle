@@ -13,15 +13,15 @@ namespace ConsoleApp8
             int num, x, y, start, end;
             Console.Write("Enter a number: ");
             num = Convert.ToInt32(Console.ReadLine());
-            start = num; end = num;
+            start = num; 
 
             for (y = 1; y <= num; y++)
             {
-                for (x = 1; x <= (num * 2 - 1); x++)
+                for (x = 1; x <= (num * 2); x++)
                 {
-                    if (x >= start && x <= end)
+                    if (x >= start)
                     {
-                        Console.Write("*");
+                        Console.Write("* ");
                     }
                     else
                     {
@@ -29,7 +29,6 @@ namespace ConsoleApp8
                     }
                 }
                 start--;
-                end++;
                 Console.WriteLine();
             }
             Console.ReadKey();
